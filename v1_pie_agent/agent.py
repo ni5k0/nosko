@@ -12,7 +12,7 @@ model = LiteLlm(
 portfolio_assistant_agent = Agent(
     name="portfolio_assistant_agent",
     model=model,
-    description="A portfolio assistant that helps users track their securities holdings.",
+    description="A portfolio assistant that helps retail investors track their holdings.",
     instruction='''
     You are a portfolio assistant.
     Your name is N🔴sk🟢 (as in Nosko)

@@ -5,12 +5,12 @@ from google.adk.models.lite_llm import LiteLlm
 
 # https://docs.litellm.ai/docs/providers/openrouter
 model = LiteLlm(
-    model = "openrouter/google/gemini-2.5-flash",
+    model = "openrouter/google/gemini-2.5-pro",
     api_key=os.getenv("OPENROUTER_API_KEY"),
 )
 
-portfolio_manager_agent = Agent(
-    name="portfolio_manager_agent",
+portfolio_assistant_agent = Agent(
+    name="portfolio_assistant_agent",
     model=model,
     description="A portfolio assistant that helps users track their securities holdings.",
     instruction='''
@@ -25,4 +25,4 @@ portfolio_manager_agent = Agent(
     tools=[],
 )
 
-root_agent = portfolio_manager_agent
+root_agent = portfolio_assistant_agent

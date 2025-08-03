@@ -28,7 +28,7 @@ web adk
 - Simple agent with no database 
 - Integration with LiteLLM
 
-**v2_apple_pie_agent**(coming soon)
+**v2_apple_pie_agent**
 - local memory (store in your computer)
 ...
 
